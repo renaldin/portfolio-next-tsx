@@ -6,7 +6,7 @@ const Sidebar = () => {
     return (
         <div>
             <img src="https://sumitdey.netlify.app/static/media/max.9d3a6d3e.jpg" className='w-32 h-32 rounded-full mx-auto' alt="Avatar" />
-            <h3 className='my-4 text-3xl font-medium tracking-wider'>
+            <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
                 <span>Renaldi </span>
                 Noviandi
             </h3>
