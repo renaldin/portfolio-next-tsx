@@ -1,7 +1,12 @@
-export default function Home() {
+import { services } from "../data"
+
+const index = () => {
+  console.log(services)
   return (
-    <h1 className="text-3xl text-red-600 font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+
+    </div>
   )
 }
+
+export default index
