@@ -1,9 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next"
-import { services as service } from '../../data'
+import { services } from '../../data'
 
-const services = (req: NextApiRequest, res: NextApiResponse) => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
     // by default get request
-    res.status(200).json({ service })
+    res.status(200).json({ services })
 }
-
-export default services
