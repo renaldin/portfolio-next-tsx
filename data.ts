@@ -1,8 +1,9 @@
 import { RiCommandLine, RiComputerLine } from 'react-icons/ri'
 import { FaServer } from 'react-icons/fa'
 import { MdDeveloperMode } from 'react-icons/md'
-import { IService } from './type'
+import { IService, ISkill } from './type'
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai'
+import { BsCircleFill } from 'react-icons/bs'
 
 export const services: IService[] = [
     {
@@ -40,5 +41,61 @@ export const services: IService[] = [
         title: "Whatever",
         about:
             "Lorem...",
+    },
+]
+
+export const languages: ISkill[] = [
+    {
+        Icon: BsCircleFill,
+        name: 'Python',
+        level: '70%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'Javascript',
+        level: '60%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'React Native',
+        level: '80%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'React',
+        level: '70%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'Django',
+        level: '80%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'Bootstrap',
+        level: '80%'
+    },
+]
+
+export const tools: ISkill[] = [
+    {
+        Icon: BsCircleFill,
+        name: 'Figma',
+        level: '85%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'Photoshop',
+        level: '45%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'Illustrator',
+        level: '80%'
+    },
+    {
+        Icon: BsCircleFill,
+        name: 'Framer',
+        level: '45%'
     },
 ]
