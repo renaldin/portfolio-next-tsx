@@ -1,12 +1,16 @@
 import { FunctionComponent } from "react"
 import { Category } from "../type"
 
-export const NavItem: FunctionComponent<{ value: Category | 'all', handlerFilterCategory: Function }> = ({
+export const NavItem: FunctionComponent<{ value: Category | 'all', handlerFilterCategory: Function, active: string }> = ({
   value,
-  handlerFilterCategory
+  handlerFilterCategory,
+  active
 }) => {
+  let className = "cursor-pointer hover:text-green capitalize"
+  if (active === value) className += ' text-green'
+
   return (
-    <li className="cursor-pointer hover:text-green capitalize" onClick={() => handlerFilterCategory(value)}>
+    <li className={className} onClick={() => handlerFilterCategory(value)}>
       {value}
     </li>
   )
@@ -14,7 +18,7 @@ export const NavItem: FunctionComponent<{ value: Category | 'all', handlerFilter
 
 
 
-const ProjectsNavbar: FunctionComponent<{ handlerFilterCategory: Function }> = (props) => {
+const ProjectsNavbar: FunctionComponent<{ handlerFilterCategory: Function, active: string }> = (props) => {
   return (
     <div className="flex space-x-3 px-3 py-2 list-none overflow-x-auto">
       <NavItem value="all" {...props} />
