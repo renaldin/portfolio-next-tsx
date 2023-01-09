@@ -2,7 +2,7 @@
 import { services } from "../data"
 import ServiceCard from "../components/ServiceCard"
 import { motion } from 'framer-motion'
-import { fadeInRight, fadeInUp, stagger } from "../animations"
+import { fadeInUp, stagger } from "../animations"
 
 const index = () => {
   return (
