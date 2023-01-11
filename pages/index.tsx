@@ -2,11 +2,11 @@
 import { services } from "../data"
 import ServiceCard from "../components/ServiceCard"
 import { motion } from 'framer-motion'
-import { fadeInUp, stagger } from "../animations"
+import { fadeInUp, routeAnimation, stagger } from "../animations"
 
 const index = () => {
   return (
-    <div className="flex flex-col px-6 pt-1 flex-grow">
+    <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="flex flex-col px-6 pt-1 flex-grow">
       <h5 className="my-3 font-medium">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis, temporibus voluptatibus possimus tempora ex maxime. Exercitationem rerum, beatae odio omnis at qui, iste cum ipsum voluptates nulla ex natus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, commodi?
       </h5>
@@ -22,7 +22,7 @@ const index = () => {
           }
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

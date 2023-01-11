@@ -1,12 +1,12 @@
 import Bar from "../components/Bar"
 import { languages, tools } from "../data"
 import { motion } from 'framer-motion'
-import { fadeInUp } from "../animations"
+import { fadeInUp, routeAnimation } from "../animations"
 
 const resume = () => {
 
     return (
-        <div className="px-6 py-2">
+        <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="px-6 py-2">
             {/* education & exp */}
 
             <div className="grid gap-6 md:grid-cols-2">
@@ -52,7 +52,7 @@ const resume = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
