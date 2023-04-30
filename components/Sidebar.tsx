@@ -13,7 +13,7 @@ const Sidebar = () => {
 
     return (
         <div>
-            <Image src="https://renaldin.github.io/web-portfolio-nextjs-tsx/public/images/avatar.jpeg" className='w-32 h-32 rounded-full mx-auto' alt="Avatar" layout="intrinsic" quality='100' width='128' height='128' />
+            <Image src="https://renaldin.github.io/web-portfolio-nextjs-tsx/images/avatar.jpeg" className='w-32 h-32 rounded-full mx-auto' alt="Avatar" layout="intrinsic" quality='100' width='128' height='128' />
             <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
                 <span className='text-green'>Renaldi </span>
                 Noviandi
