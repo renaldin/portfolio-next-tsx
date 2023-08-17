@@ -20,7 +20,7 @@ const ProjectCard: FunctionComponent<{
 
         return (
             <div>
-                <Image src={'https://renaldin.github.io/web-portfolio-nextjs-tsx'+image_path} alt={name} className="cursor-pointer" onClick={() => setShowDetail(id)} layout="responsive" height='150' width='300' />
+                <Image src={'https://renaldin.github.io/portfolio' + image_path} alt={name} className="cursor-pointer" onClick={() => setShowDetail(id)} layout="responsive" height='150' width='300' />
                 {/* <img src={image_path} alt={name} className="cursor-pointer" onClick={() => setShowDetail(true)} /> */}
                 <p className="my-2 text-center">{name}</p>
 
@@ -29,7 +29,7 @@ const ProjectCard: FunctionComponent<{
                         <motion.div variants={stagger} initial="initial" animate="animate">
                             {/* <img src={image_path} alt={name} className="cursor-pointer" /> */}
                             <motion.div variants={fadeInUp} className="border-4 border-gray-100">
-                                <Image src={'https://renaldin.github.io/web-portfolio-nextjs-tsx'+image_path} alt={name} layout="responsive" height='150' width='300' />
+                                <Image src={'https://renaldin.github.io/portfolio' + image_path} alt={name} layout="responsive" height='150' width='300' />
                             </motion.div>
                             <motion.div variants={fadeInUp} className="flex justify-center my-4 space-x-3">
                                 {
