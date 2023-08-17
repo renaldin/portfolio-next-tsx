@@ -13,20 +13,23 @@ const resume = () => {
                 <motion.div variants={fadeInUp} initial="initial" animate="animate">
                     <h5 className="my-3 text-2xl font-bold">Education</h5>
                     <div>
-                        <h5 className="my-2 text-xl font-bold">Computer Science Engineering</h5>
-                        <p className="font-semibold">Academy of Technology(2017-2021)</p>
-                        <p className="my-3">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam error vel facere. Delectus ratione architecto mollitia nisi.
+                        <h5 className="my-2 text-xl font-bold">Information Systems</h5>
+                        <p className="font-semibold">Politeknik Negeri Subang (2020-2023)</p>
+                        <p className="mt-3">
+                            - 1st Winner Outstanding Student. Issued by Politeknik Negeri Subang · Apr 2022
+                        </p>
+                        <p className="mb-3">
+                            - 1st Winner Outstanding Student. Issued by Jurusan Manajemen Informatika Politeknik Negeri Subang · Mar 2022
                         </p>
                     </div>
                 </motion.div>
                 <motion.div variants={fadeInUp} initial="initial" animate="animate">
                     <h5 className="my-3 text-2xl font-bold">Experience</h5>
                     <div>
-                        <h5 className="my-2 text-xl font-bold">Software Engineer Jr.</h5>
-                        <p className="font-semibold">TCS (2021 - on)</p>
+                        <h5 className="my-2 text-xl font-bold">Frontend Developer</h5>
+                        <p className="font-semibold">PT. Inovasi Kesehatan Indonesia (Kesia) (October 2022 - January 2023)</p>
                         <p className="my-3">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            This is my internship experience at <a href="https://www.kesia.id/" className="text-green" target="__blank">Kesia.id</a> and was assigned as a Frontend Developer.
                         </p>
                     </div>
                 </motion.div>

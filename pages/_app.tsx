@@ -15,7 +15,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <div className='col-span-12 bg-white lg:col-span-9 rounded-2xl flex flex-col overflow-hidden dark:bg-dark-500 shadow-custom-light dark:shadow-custom-dark'>
           <Navbar />
           {/* <AnimatePresence exitBeforeEnter> */}
-            <Component {...pageProps} key={router.route} />
+          <Component {...pageProps} key={router.route} />
           {/* </AnimatePresence> */}
 
         </div>
